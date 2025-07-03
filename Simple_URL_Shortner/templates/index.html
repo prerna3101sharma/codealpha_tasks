@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    Home
+{% endblock title %}
+
+
+{% block body %}
+<div class="container">
+<form action="#" method="post">
+    <div class="mb-3">
+      <label for="url" class="form-label">Enter the https:// URL: </label>
+      <input type="text" class="form-control" id="url" name="url" pattern="https://.*" size=50 placeholder="https://example.com" required>
+      <br>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>  
+</div>
+
+{% endblock body %}
